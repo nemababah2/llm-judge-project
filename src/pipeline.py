@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 INPUT_CSV = "data/questions.csv"
 OUTPUT_DIR = "outputs"
 SLEEP_BETWEEN_CALLS = 1.0
-MAX_QUESTIONS = 50
+MAX_QUESTIONS = 3000
 
 MODELS_TO_RUN = [
     "openai:gpt-4o-mini",
@@ -143,6 +143,8 @@ def load_dataset(csv_path: str) -> pd.DataFrame:
 def generate_responses(df: pd.DataFrame, model_ids: List[str]) -> pd.DataFrame:
     rows = []
 
+    partial_save_path = os.path.join(OUTPUT_DIR, "raw_model_responses_partial.csv")
+
     for model_id in model_ids:
         print(f"\n=== Génération des réponses pour {model_id} ===")
 
@@ -156,20 +158,28 @@ def generate_responses(df: pd.DataFrame, model_ids: List[str]) -> pd.DataFrame:
                 print(f"[ERREUR] modèle={model_id} idx={i}: {e}")
                 model_response = ""
 
-            rows.append({
+            result_row = {
                 "row_id": i,
                 "model": model_id,
                 "question": question,
                 "gold_answer": gold,
                 "model_response": model_response,
-            })
+            }
 
-            if (i + 1) % 10 == 0:
-                print(f"{i + 1} questions traitées pour {model_id}")
+            rows.append(result_row)
+
+            # Sauvegarde progressive toutes les 20 questions
+            if (i + 1) % 20 == 0:
+                pd.DataFrame(rows).to_csv(partial_save_path, index=False)
+                print(f"{i + 1} questions traitées pour {model_id} | sauvegarde partielle OK")
 
             time.sleep(SLEEP_BETWEEN_CALLS)
 
-    return pd.DataFrame(rows)
+    # Sauvegarde finale
+    final_df = pd.DataFrame(rows)
+    final_df.to_csv(partial_save_path, index=False)
+
+    return final_df
 
 
 def load_precomputed_responses(df_gold: pd.DataFrame, csv_path: str) -> pd.DataFrame:
