@@ -7,6 +7,7 @@ from typing import List
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from rapidfuzz import fuzz
 
 
 # ============================================================
@@ -16,14 +17,14 @@ import matplotlib.pyplot as plt
 INPUT_CSV = "data/questions.csv"
 OUTPUT_DIR = "outputs"
 SLEEP_BETWEEN_CALLS = 1.0
-MAX_QUESTIONS = 3000
+MAX_QUESTIONS = None
 
 MODELS_TO_RUN = [
     "openai:gpt-4o-mini",
 ]
 
-USE_PRECOMPUTED_RESPONSES = False
-PRECOMPUTED_RESPONSES_CSV = "precomputed_responses.csv"
+USE_PRECOMPUTED_RESPONSES = True
+PRECOMPUTED_RESPONSES_CSV = "outputs/raw_model_responses.csv"
 
 
 # ============================================================
@@ -182,34 +183,42 @@ def generate_responses(df: pd.DataFrame, model_ids: List[str]) -> pd.DataFrame:
     return final_df
 
 
-def load_precomputed_responses(df_gold: pd.DataFrame, csv_path: str) -> pd.DataFrame:
-    pre = pd.read_csv(csv_path)
+def load_precomputed_responses(csv_path: str) -> pd.DataFrame:
+    df = pd.read_csv(csv_path)
 
-    required = {"model", "question", "model_response"}
-    if not required.issubset(set(pre.columns)):
+    required = {"model", "question", "gold_answer", "model_response"}
+    if not required.issubset(set(df.columns)):
         raise ValueError(
-            "Le CSV de réponses pré-calculées doit contenir: model, question, model_response"
+            "Le CSV pré-calculé doit contenir: model, question, gold_answer, model_response"
         )
 
-    merged = pre.merge(
-        df_gold.rename(columns={"response": "gold_answer"}),
-        on="question",
-        how="left"
-    )
-    return merged
+    return df
 
 
 def evaluate_results(results_df: pd.DataFrame) -> pd.DataFrame:
     df = results_df.copy()
 
+    df["model_response"] = df["model_response"].apply(clean_model_output)
+
     df["gold_norm"] = df["gold_answer"].apply(normalize_text)
     df["pred_norm"] = df["model_response"].apply(normalize_text)
+
     df["exact_match"] = (df["pred_norm"] == df["gold_norm"]).astype(int)
     df["contains_gold"] = df.apply(
         lambda r: contains_gold_score(r["model_response"], r["gold_answer"]),
         axis=1
     )
+
+    df["fuzzy_score"] = df.apply(
+        lambda r: fuzzy_score(r["model_response"], r["gold_answer"]),
+        axis=1
+    )
+
+    df["fuzzy_correct_80"] = (df["fuzzy_score"] >= 80).astype(int)
+    df["fuzzy_correct_90"] = (df["fuzzy_score"] >= 90).astype(int)
+
     df["response_length_chars"] = df["model_response"].fillna("").astype(str).str.len()
+    df["gold_length_chars"] = df["gold_answer"].fillna("").astype(str).str.len()
 
     return df
 
@@ -219,15 +228,25 @@ def compute_summary_metrics(eval_df: pd.DataFrame) -> pd.DataFrame:
         n_questions=("question", "count"),
         accuracy_exact=("exact_match", "mean"),
         accuracy_contains_gold=("contains_gold", "mean"),
+        accuracy_fuzzy_80=("fuzzy_correct_80", "mean"),
+        accuracy_fuzzy_90=("fuzzy_correct_90", "mean"),
+        avg_fuzzy_score=("fuzzy_score", "mean"),
         avg_response_length=("response_length_chars", "mean"),
     ).reset_index()
 
-    grouped["accuracy_exact"] = (grouped["accuracy_exact"] * 100).round(2)
-    grouped["accuracy_contains_gold"] = (grouped["accuracy_contains_gold"] * 100).round(2)
+    percent_cols = [
+        "accuracy_exact",
+        "accuracy_contains_gold",
+        "accuracy_fuzzy_80",
+        "accuracy_fuzzy_90",
+    ]
+    for col in percent_cols:
+        grouped[col] = (grouped[col] * 100).round(2)
+
+    grouped["avg_fuzzy_score"] = grouped["avg_fuzzy_score"].round(2)
     grouped["avg_response_length"] = grouped["avg_response_length"].round(2)
 
-    return grouped.sort_values("accuracy_exact", ascending=False)
-
+    return grouped.sort_values("accuracy_fuzzy_80", ascending=False)
 
 def save_error_samples(eval_df: pd.DataFrame, output_dir: str, max_errors_per_model: int = 30) -> None:
     errors = eval_df[eval_df["exact_match"] == 0].copy()
@@ -305,6 +324,79 @@ def plot_correct_vs_incorrect(eval_df: pd.DataFrame, output_dir: str) -> None:
     plt.savefig(os.path.join(output_dir, "correct_vs_incorrect.png"), dpi=200)
     plt.close()
 
+def clean_model_output(text: str) -> str:
+    if text is None:
+        return ""
+    text = str(text).strip()
+
+    prefixes = ["Réponse:", "Reponse:", "Answer:", "Réponse finale:", "Final answer:"]
+    for prefix in prefixes:
+        if text.lower().startswith(prefix.lower()):
+            text = text[len(prefix):].strip()
+
+    return text
+
+
+def fuzzy_score(pred: str, gold: str) -> float:
+    return fuzz.ratio(normalize_text(pred), normalize_text(gold))
+
+
+def plot_metric_comparison(summary_df: pd.DataFrame, output_dir: str) -> None:
+    metrics = [
+        "accuracy_exact",
+        "accuracy_contains_gold",
+        "accuracy_fuzzy_80",
+        "accuracy_fuzzy_90",
+    ]
+
+    plot_df = summary_df.set_index("model")[metrics].T
+
+    plt.figure(figsize=(10, 6))
+    for model in plot_df.columns:
+        plt.plot(plot_df.index, plot_df[model], marker="o", label=model)
+
+    plt.ylabel("Score (%)")
+    plt.title("Comparaison des métriques par modèle")
+    plt.xticks(rotation=20)
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, "metric_comparison.png"), dpi=200)
+    plt.close()
+
+def plot_fuzzy_score_distribution(eval_df: pd.DataFrame, output_dir: str) -> None:
+    for model_name, sub in eval_df.groupby("model"):
+        plt.figure(figsize=(9, 6))
+        plt.hist(sub["fuzzy_score"], bins=20)
+        plt.xlabel("Fuzzy score")
+        plt.ylabel("Nombre de réponses")
+        plt.title(f"Distribution des fuzzy scores - {model_name}")
+        plt.tight_layout()
+        safe_name = model_name.replace(":", "_").replace("/", "_")
+        plt.savefig(os.path.join(output_dir, f"fuzzy_score_distribution_{safe_name}.png"), dpi=200)
+        plt.close()
+
+def plot_length_vs_fuzzy(eval_df: pd.DataFrame, output_dir: str) -> None:
+    for model_name, sub in eval_df.groupby("model"):
+        plt.figure(figsize=(9, 6))
+        plt.scatter(sub["response_length_chars"], sub["fuzzy_score"], alpha=0.6)
+        plt.xlabel("Longueur de la réponse (caractères)")
+        plt.ylabel("Fuzzy score")
+        plt.title(f"Longueur de réponse vs qualité - {model_name}")
+        plt.tight_layout()
+        safe_name = model_name.replace(":", "_").replace("/", "_")
+        plt.savefig(os.path.join(output_dir, f"length_vs_fuzzy_{safe_name}.png"), dpi=200)
+        plt.close()
+
+def save_top_borderline_cases(eval_df: pd.DataFrame, output_dir: str) -> None:
+    borderline = eval_df[
+        (eval_df["exact_match"] == 0) & (eval_df["fuzzy_score"] >= 70)
+    ].copy()
+
+    if not borderline.empty:
+        borderline.sort_values("fuzzy_score", ascending=False).to_csv(
+            os.path.join(output_dir, "borderline_cases.csv"),
+            index=False
+        )
 
 # ============================================================
 # MAIN
@@ -322,7 +414,7 @@ def main():
     print(f"Dataset chargé: {len(df)} questions")
 
     if USE_PRECOMPUTED_RESPONSES:
-        results_df = load_precomputed_responses(df, PRECOMPUTED_RESPONSES_CSV)
+        results_df = load_precomputed_responses(PRECOMPUTED_RESPONSES_CSV)
     else:
         if not MODELS_TO_RUN:
             raise ValueError("MODELS_TO_RUN est vide. Ajoute au moins un modèle.")
@@ -348,6 +440,12 @@ def main():
     plot_contains_gold(summary_df, OUTPUT_DIR)
     plot_response_length(eval_df, OUTPUT_DIR)
     plot_correct_vs_incorrect(eval_df, OUTPUT_DIR)
+
+    plot_metric_comparison(summary_df, OUTPUT_DIR)
+    plot_fuzzy_score_distribution(eval_df, OUTPUT_DIR)
+    plot_length_vs_fuzzy(eval_df, OUTPUT_DIR)
+
+    save_top_borderline_cases(eval_df, OUTPUT_DIR)
 
     print("\n=== RÉSUMÉ ===")
     print(summary_df.to_string(index=False))
