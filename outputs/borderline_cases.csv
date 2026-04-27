@@ -1,0 +1,220 @@
+row_id,model,question,gold_answer,model_response,gold_norm,pred_norm,exact_match,contains_gold,fuzzy_score,fuzzy_correct_80,fuzzy_correct_90,response_length_chars,gold_length_chars
+781,openai:gpt-4o-mini,Quelle guerre a mené aux traités inégaux ?,guerres de l'opium,Guerre de l'Opium.,guerres de l opium,guerre de l opium,0,0,97.14285714285714,1,1,18,18
+416,openai:gpt-4o-mini,Quelle est la profession de Claude Lévi-Strauss ?,anthropologues,Anthropologue.,anthropologues,anthropologue,0,0,96.2962962962963,1,1,14,14
+417,openai:gpt-4o-mini,Quelle est la profession de Claude Lévi-Strauss ?,anthropologues,Anthropologue.,anthropologues,anthropologue,0,0,96.2962962962963,1,1,14,14
+2748,openai:gpt-4o-mini,Qui gère la réserve depuis 1996 ?,Office national des forêts,L'Office national des forêts.,office national des forets,l office national des forets,0,1,96.2962962962963,1,1,29,26
+1667,openai:gpt-4o-mini,De quelle origine sont les berdaches ?,amérindiennes,Amérindienne.,amerindiennes,amerindienne,0,0,96.0,1,1,13,13
+146,openai:gpt-4o-mini,Quel est la forme géométrique de la tour Choukhov ?,hyperboloïdes,Hyperboloïde,hyperboloides,hyperboloide,0,0,96.0,1,1,12,13
+182,openai:gpt-4o-mini,Dans quel objet retrouve-t-on des mots et leur définition ?,dictionnaires,Dictionnaire.,dictionnaires,dictionnaire,0,0,96.0,1,1,13,13
+250,openai:gpt-4o-mini,Quelle est la nationalité des personnes qui ont détruit les bâtiments et les champs des acadiens ?,Britanniques,Britannique.,britanniques,britannique,0,0,95.65217391304348,1,1,12,12
+249,openai:gpt-4o-mini,Quelle est la nationalité des personnes qui ont détruit les bâtiments et les champs des acadiens ?,Britanniques,Britannique.,britanniques,britannique,0,0,95.65217391304348,1,1,12,12
+428,openai:gpt-4o-mini,A quelle famille d'instruments de musique appartiennent les tambours ?,percussions,Percussion.,percussions,percussion,0,0,95.23809523809523,1,1,11,11
+118,openai:gpt-4o-mini,De quel confession est l'ordre d'Orange ?,protestante,Protestant.,protestante,protestant,0,0,95.23809523809523,1,1,11,11
+1115,openai:gpt-4o-mini,Dans quelle revue ont été synthétisé les résultats des études avant les travaux du professeur Séralini ?,la Food and Chemical Toxicology,Food and Chemical Toxicology.,la food and chemical toxicology,food and chemical toxicology,0,0,94.91525423728814,1,1,29,31
+2467,openai:gpt-4o-mini,Quelle était l'armée la mieux organisée lors de la guerre d'indépendance des États-Unis ?,armée britannique,L'armée britannique.,armee britannique,l armee britannique,0,1,94.44444444444444,1,1,20,17
+928,openai:gpt-4o-mini,Quelle distinction a obtenu Wole Soyinka en 1986 ?,le prix Nobel de littérature,Prix Nobel de littérature.,le prix nobel de litterature,prix nobel de litterature,0,0,94.33962264150944,1,1,26,28
+931,openai:gpt-4o-mini,Quel distinction Wole Soyinka est il le premier écrivain africain à recevoir ?,le prix Nobel de littérature,Prix Nobel de littérature.,le prix nobel de litterature,prix nobel de litterature,0,0,94.33962264150944,1,1,26,28
+733,openai:gpt-4o-mini,Quel est le premier mois de l'année dans le calendrier musulman ?,mouharram,Muharram,mouharram,muharram,0,0,94.11764705882352,1,1,8,9
+1886,openai:gpt-4o-mini,Quel est la nationalité de la première population du camp de concentration du Stutthof?,Polonais,Polonaise.,polonais,polonaise,0,1,94.11764705882352,1,1,10,8
+5,openai:gpt-4o-mini,Qui commanda la construction du Woolworth Building ?,Frank Woolworth,Frank W. Woolworth.,frank woolworth,frank w woolworth,0,0,93.75,1,1,19,15
+148,openai:gpt-4o-mini,Quel mouvement artistique et architectural s'applique au nouvelles construction de Choukhov ?,constructiviste,Constructivisme.,constructiviste,constructivisme,0,0,93.33333333333333,1,1,16,15
+2686,openai:gpt-4o-mini,Quelle terme latin signifie lieu étroit ?,angustu,Angustus.,angustu,angustus,0,1,93.33333333333333,1,1,9,7
+411,openai:gpt-4o-mini,"Quel est le statut d'une personne qui ne jouit pas de toutes ses conditions de liberté, voire d'aucune ?",esclaves,Esclave.,esclaves,esclave,0,0,93.33333333333333,1,1,8,8
+147,openai:gpt-4o-mini,Quel mouvement artistique et architectural s'applique au nouvelles construction de Choukhov ?,constructiviste,Constructivisme.,constructiviste,constructivisme,0,0,93.33333333333333,1,1,16,15
+2602,openai:gpt-4o-mini,Quel chef ottoman est associée à l'age d'or de l'empire ?,Soliman le Magnifique,Suleiman le Magnifique.,soliman le magnifique,suleiman le magnifique,0,0,93.02325581395348,1,1,23,21
+2902,openai:gpt-4o-mini,Que s'est-il passé en juillet 1789 ?,la prise de la Bastille,Prise de la Bastille.,la prise de la bastille,prise de la bastille,0,0,93.02325581395348,1,1,21,23
+1275,openai:gpt-4o-mini,Combien de militaires sont transportés à bord du Vizzavona pour la Norvège ?,800 militaires,700 militaires.,800 militaires,700 militaires,0,0,92.85714285714286,1,1,15,14
+330,openai:gpt-4o-mini,Quel événement a lancé le mouvement global pour une éducation de base pour tous ?,la Conférence mondiale sur l'éducation pour tous,La Conférence mondiale sur l'éducation pour tous en 1990.,la conference mondiale sur l education pour tous,la conference mondiale sur l education pour tous en 1990,0,1,92.3076923076923,1,1,57,48
+449,openai:gpt-4o-mini,Quel est le statut de la Commission internationale de coopération intellectuelle ?,un organe consultatif,Organe consultatif.,un organe consultatif,organe consultatif,0,0,92.3076923076923,1,1,19,21
+1887,openai:gpt-4o-mini,De quelle ville est origine la première population du camp de concentration du Stutthof?,Dantzig,Danzig.,dantzig,danzig,0,0,92.3076923076923,1,1,7,7
+1900,openai:gpt-4o-mini,Quelle est la taille de l'armée ottomane qu'affronte les forces de Paskevitch le 30 juin 1829?,30 000 hommes,80 000 hommes.,30 000 hommes,80 000 hommes,0,0,92.3076923076923,1,1,14,13
+1901,openai:gpt-4o-mini,Quelle est la taille de l'armée ottomane qu'affrontent les forces de Paskevitch le 2 juillet 1829?,20 000 hommes,80 000 hommes.,20 000 hommes,80 000 hommes,0,0,92.3076923076923,1,1,14,13
+483,openai:gpt-4o-mini,Quel est l'ordre de grandeur de l'aide fiscale en 2015 ?,milliards d'euros,70 milliards d'euros.,milliards d euros,70 milliards d euros,0,1,91.89189189189189,1,1,21,17
+1495,openai:gpt-4o-mini,Dans quelles circonstances Edward Dickinson Baker décède-t-il ?,lors de la bataille de Ball's Bluff,Au cours de la bataille de Ball's Bluff.,lors de la bataille de ball s bluff,au cours de la bataille de ball s bluff,0,0,91.89189189189189,1,1,40,35
+2658,openai:gpt-4o-mini,Quelles interruptions de l'émission lui déplaisent ?,coupures publicitaires,Les coupures publicitaires.,coupures publicitaires,les coupures publicitaires,0,1,91.66666666666666,1,1,27,22
+1795,openai:gpt-4o-mini,Quel est le domaine de prédilection des travaux de Carnot?,thermodynamique,La thermodynamique.,thermodynamique,la thermodynamique,0,1,90.9090909090909,1,1,19,15
+1904,openai:gpt-4o-mini,Qui dirige les opérations Ottomanes sur le théâtre géorgien?,Ahmet Pacha,Ahmed Pacha.,ahmet pacha,ahmed pacha,0,0,90.9090909090909,1,1,12,11
+2886,openai:gpt-4o-mini,Quand la sonde spaciale Mariner 10 fut lancée ?,le 3 novembre 1973,3 novembre 1973.,le 3 novembre 1973,3 novembre 1973,0,0,90.9090909090909,1,1,16,18
+99,openai:gpt-4o-mini,De qui le duc Guillaume de Normandie est le subordonné ?,du roi des Francs,Du roi de France.,du roi des francs,du roi de france,0,0,90.9090909090909,1,1,17,17
+1941,openai:gpt-4o-mini,Quel était le nom donné aux victimes de l'esclavage sexuel japonais?,Femmes de réconfort,Les femmes de réconfort.,femmes de reconfort,les femmes de reconfort,0,1,90.47619047619048,1,1,24,19
+2784,openai:gpt-4o-mini,A qui philippe le bel s'est-il opposé ?,le pape Boniface VIII,Au pape Boniface VIII.,le pape boniface viii,au pape boniface viii,0,0,90.47619047619048,1,1,22,21
+2783,openai:gpt-4o-mini,A qui philippe le bel s'est-il opposé ?,le pape Boniface VIII,Au pape Boniface VIII.,le pape boniface viii,au pape boniface viii,0,0,90.47619047619048,1,1,22,21
+1828,openai:gpt-4o-mini,Comment fut organisée l'armée britannique pour investir le royaume zoulou ?,trois colonnes,En trois colonnes.,trois colonnes,en trois colonnes,0,1,90.32258064516128,1,1,18,14
+18,openai:gpt-4o-mini,Quand est-ce que Saint Louis fût en croisade ?,1248 à 1254,1248-1254.,1248 a 1254,1248 1254,0,0,90.0,1,1,10,11
+1721,openai:gpt-4o-mini,De quelle nationalité sont les droits des films de la RKO ?,américains,Américaine.,americains,americaine,0,0,90.0,1,1,11,10
+1722,openai:gpt-4o-mini,De quelle nationalité sont les droits des films de la RKO ?,américains,Américaine.,americains,americaine,0,0,90.0,1,1,11,10
+1614,openai:gpt-4o-mini,Quelle est la sensibilité politique de Joseph Staline ?,communiste,Communisme.,communiste,communisme,0,0,90.0,1,1,11,10
+1615,openai:gpt-4o-mini,Quelle est la sensibilité politique de Joseph Staline ?,communiste,Communisme.,communiste,communisme,0,0,90.0,1,1,11,10
+608,openai:gpt-4o-mini,Quel ensemble plus grand inclus la basilique Notre Dame de Guadalupe?,Sanctuaire marial de Notre-Dame de Guadalupe,Santuaire de Notre-Dame de Guadalupe.,sanctuaire marial de notre dame de guadalupe,santuaire de notre dame de guadalupe,0,0,90.0,1,1,37,44
+2149,openai:gpt-4o-mini,Comment s’appelle le couvercle de l’arche d’alliance ?,propitiatoire,Le propitiatoire.,propitiatoire,le propitiatoire,0,1,89.65517241379311,1,0,17,13
+780,openai:gpt-4o-mini,Quelle guerre a mené aux traités inégaux ?,guerres de l'opium,La guerre de l'opium.,guerres de l opium,la guerre de l opium,0,0,89.47368421052632,1,0,21,18
+31,openai:gpt-4o-mini,Quelle est le nom de la Reine de Louis VII ?,Aliénor d'Aquitaine,Eleanor d'Aquitaine.,alienor d aquitaine,eleanor d aquitaine,0,0,89.47368421052632,1,0,20,19
+6,openai:gpt-4o-mini,Quelle femme devint reine aux côtés de Philippe le Bel ?,Jeanne Ire de Navarre,Jeanne de Navarre.,jeanne ire de navarre,jeanne de navarre,0,0,89.47368421052632,1,0,18,21
+2844,openai:gpt-4o-mini,Pourquoi Marc Favreau est-il célèbre ?,son personnage de Sol,"Pour son personnage de ""Sol"".",son personnage de sol,pour son personnage de sol,0,1,89.36170212765957,1,0,29,21
+1916,openai:gpt-4o-mini,Quelle fut la traduction juridique de la victoire de l'Empereur Nicolas Ier sur le Chah Fath Ali Chah Qadjar?,le traité de Turkmanchai,Traité de Turkmanchah.,le traite de turkmanchai,traite de turkmanchah,0,0,88.88888888888889,1,0,22,24
+272,openai:gpt-4o-mini,Quelle est la monnaie chinoise ?,yuans,Yuan.,yuans,yuan,0,0,88.88888888888889,1,0,5,5
+271,openai:gpt-4o-mini,Quelle est la monnaie chinoise ?,yuans,Yuan,yuans,yuan,0,0,88.88888888888889,1,0,4,5
+270,openai:gpt-4o-mini,Quelle est la monnaie chinoise ?,yuans,Yuan.,yuans,yuan,0,0,88.88888888888889,1,0,5,5
+2601,openai:gpt-4o-mini,Quel chef ottoman est associée à l'age d'or de l'empire ?,Soliman le Magnifique,Süleyman le Magnifique.,soliman le magnifique,suleyman le magnifique,0,0,88.37209302325581,1,0,23,21
+2600,openai:gpt-4o-mini,Quel chef ottoman est associée à l'age d'or de l'empire ?,Soliman le Magnifique,Süleyman le Magnifique.,soliman le magnifique,suleyman le magnifique,0,0,88.37209302325581,1,0,23,21
+1203,openai:gpt-4o-mini,Quelle est le niveau de la dette en 2006 ?,60 milliards d'euros,1 216 milliards d'euros.,60 milliards d euros,1 216 milliards d euros,0,0,88.37209302325581,1,0,24,20
+2367,openai:gpt-4o-mini,A quelle civilisation appartient la troisième dynastie d'Ur ?,mésopotamienne,Mésopotamie.,mesopotamienne,mesopotamie,0,0,88.0,1,0,12,14
+1792,openai:gpt-4o-mini,Quel est le comburant essentiel identifié au XVIIIe siècle pour la combustion ?,oxygène,L'oxygène.,oxygene,l oxygene,0,1,87.5,1,0,10,7
+1185,openai:gpt-4o-mini,Par quel mouvement artistique a été inspiré Mihály Zichy ?,le romantisme,Romantisme.,le romantisme,romantisme,0,0,86.95652173913044,1,0,11,13
+1988,openai:gpt-4o-mini,Quand éclata l'insurrection à Madrid ?,Le 2 mai 1808,2 mai 1808.,le 2 mai 1808,2 mai 1808,0,0,86.95652173913044,1,0,11,13
+2673,openai:gpt-4o-mini,Quel est le moyen pour les tortues d'absorber l'énergie solaire ?,leur carapace,Par leur carapace.,leur carapace,par leur carapace,0,1,86.66666666666667,1,0,18,13
+472,openai:gpt-4o-mini,Quel est le groupe politique opposé aux progressistes ?,les conservateurs,Conservateurs.,les conservateurs,conservateurs,0,0,86.66666666666667,1,0,14,17
+2248,openai:gpt-4o-mini,Quel est la nationalité de Varron ?,Romains,Romaine.,romains,romaine,0,0,85.71428571428572,1,0,8,7
+1774,openai:gpt-4o-mini,Vers quelle période la Chelidonium majus commence-t-elle à pousser?,printemps,Au printemps.,printemps,au printemps,0,1,85.71428571428572,1,0,13,9
+1361,openai:gpt-4o-mini,Quelle médaille Florian Schillinger obtient il lors de l'épreuve par équipe de combiné nordique de l'Universiade d'hiver de 2009 ?,l'argent,Argent.,l argent,argent,0,0,85.71428571428572,1,0,7,8
+737,openai:gpt-4o-mini,"En 2005, dans combien de pays a-t-on fêté l'Aïd el-Fitr le 3 novembre ?",30 pays,10 pays.,30 pays,10 pays,0,0,85.71428571428572,1,0,8,7
+1362,openai:gpt-4o-mini,Quelle médaille Florian Schillinger obtient il lors de l'épreuve par équipe de combiné nordique de l'Universiade d'hiver de 2009 ?,l'argent,Argent.,l argent,argent,0,0,85.71428571428572,1,0,7,8
+725,openai:gpt-4o-mini,Quelle est la durée moyenne entre de nouvelles lunes au solstice d'hiver ?,"29,84 jours","29,5 jours.",29 84 jours,29 5 jours,0,0,85.71428571428572,1,0,11,11
+1260,openai:gpt-4o-mini,Quelle est la capacité du Vizzavona en nombre de passagers ?,800 passagers,320 passagers.,800 passagers,320 passagers,0,0,84.61538461538461,1,0,14,13
+479,openai:gpt-4o-mini,Qui sont les bénéficiaires de l'aide à l'innovation ?,entreprises,Les entreprises.,entreprises,les entreprises,0,1,84.61538461538461,1,0,16,11
+350,openai:gpt-4o-mini,Quel religion est symbolisée par le fils aîné dans la parabole du fils prodigue ?,judaïsme,Le judaïsme.,judaisme,le judaisme,0,1,84.21052631578947,1,0,12,8
+965,openai:gpt-4o-mini,Quel club italien a remporté plus de titre que le FC Internazionale Milano ?,la Juventus,Juventus.,la juventus,juventus,0,0,84.21052631578947,1,0,9,11
+973,openai:gpt-4o-mini,Comment appelle-t-on la rencontre entre la Juventus de Turin et le FC Internazionale Milano ?,derby d'Italie,Le Derbi d'Italie.,derby d italie,le derbi d italie,0,0,83.87096774193549,1,0,18,14
+2426,openai:gpt-4o-mini,Comment s'appelle le baromètre pour Le Point et La Croix ?,baromètre Sofres,Baromètre Ipsos.,barometre sofres,barometre ipsos,0,0,83.87096774193549,1,0,16,16
+1204,openai:gpt-4o-mini,Quelle est le niveau de la dette en 2006 ?,60 milliards d'euros,1 987 milliards d'euros.,60 milliards d euros,1 987 milliards d euros,0,0,83.72093023255813,1,0,24,20
+1038,openai:gpt-4o-mini,Quelle équipe affronte l'équipe du Canada en finale de la compétition ?,les États-Unis,États-Unis.,les etats unis,etats unis,0,0,83.33333333333334,1,0,11,14
+1039,openai:gpt-4o-mini,Quelle équipe affronte l'équipe du Canada en finale de la compétition ?,les États-Unis,États-Unis.,les etats unis,etats unis,0,0,83.33333333333334,1,0,11,14
+968,openai:gpt-4o-mini,Quel est l'autre nom de San Siro ?,Stade Giuseppe-Meazza,Giuseppe Meazza.,stade giuseppe meazza,giuseppe meazza,0,0,83.33333333333334,1,0,16,21
+437,openai:gpt-4o-mini,Qui sont les acteurs qui n'étaient pas en faveur de la guerre d'indépendance américaine ?,loyalistes,Les loyalistes.,loyalistes,les loyalistes,0,1,83.33333333333334,1,0,15,10
+682,openai:gpt-4o-mini,Dans quel pays a eu lieu la guerre d'indépendance américaine ?,aux États-Unis,États-Unis.,aux etats unis,etats unis,0,0,83.33333333333334,1,0,11,14
+2403,openai:gpt-4o-mini,À quel âge la princesse est-elle devenue veuve ?,19 ans ,18 ans.,19 ans,18 ans,0,0,83.33333333333334,1,0,7,7
+1044,openai:gpt-4o-mini,Où sont organisés les Jeux olympiques de 1998 ?,à Nagano au Japon,"Nagano, Japon.",a nagano au japon,nagano japon,0,0,82.75862068965517,1,0,14,17
+1914,openai:gpt-4o-mini,Quel fut le résultat du conflit entre Saint-Pétersbourg et Téhéran?,le traité de Turkmanchai,Traité de Turkmènechay.,le traite de turkmanchai,traite de turkmenechay,0,0,82.6086956521739,1,0,23,24
+1624,openai:gpt-4o-mini,Quel pays se trouve au sud de la Lituanie?,La Pologne,Pologne.,la pologne,pologne,0,0,82.35294117647058,1,0,8,10
+1801,openai:gpt-4o-mini,Quel élément peut s'ajouter aux trois éléments du repas gastronomique des français ?,fromage,Le fromage.,fromage,le fromage,0,1,82.35294117647058,1,0,11,7
+0,openai:gpt-4o-mini,question,reponse,Réponse : 42.,reponse,reponse 42,0,1,82.35294117647058,1,0,13,7
+123,openai:gpt-4o-mini,Quand s'est déroulée la bataille de la Boyne ?,le 12 juillet 1690,1er juillet 1690.,le 12 juillet 1690,1er juillet 1690,0,0,82.35294117647058,1,0,17,18
+420,openai:gpt-4o-mini,Quelles est l'idéologie qui postule une hiéarchie des races et mène à des actes discriminants ?,le racisme,Racisme.,le racisme,racisme,0,0,82.35294117647058,1,0,8,10
+1122,openai:gpt-4o-mini,De quel territoire François Grosdidier est il le représentant ?,la Moselle,Moselle.,la moselle,moselle,0,0,82.35294117647058,1,0,8,10
+2595,openai:gpt-4o-mini,Avec quelle famille européenne les ottomans ont-ils été en conflit ?,Habsbourg,Les Habsbourg.,habsbourg,les habsbourg,0,1,81.81818181818181,1,0,14,9
+1681,openai:gpt-4o-mini,Comment est surnommé l’AC milan ?,Rossoneri,Les Rossoneri.,rossoneri,les rossoneri,0,1,81.81818181818181,1,0,14,9
+254,openai:gpt-4o-mini,Quelle catégorie professionnelle est fortement impliquée dans le commerce international à Louisbourg ?,marchands,Les marchands.,marchands,les marchands,0,1,81.81818181818181,1,0,14,9
+1890,openai:gpt-4o-mini,"En dehors des polonais, qu'elle est l'autre nationalité malgré tout représentée dans le camp de concentration du Stutthof dès son origine?",Allemands,Les Allemands.,allemands,les allemands,0,1,81.81818181818181,1,0,14,9
+2943,openai:gpt-4o-mini,Comment s'appelle le père de Cédric Diggory?,Amos Diggory,Mr. Diggory.,amos diggory,mr diggory,0,0,81.81818181818181,1,0,12,12
+2942,openai:gpt-4o-mini,Comment s'appelle le père de Cédric Diggory?,Amos Diggory,Mr. Diggory.,amos diggory,mr diggory,0,0,81.81818181818181,1,0,12,12
+749,openai:gpt-4o-mini,Quelle méthode utilisent les musulmans pour déterminer le commencement du mois ?,l'observation à l'œil nu,L'observation de la lune.,l observation a l il nu,l observation de la lune,0,0,80.85106382978724,1,0,25,24
+822,openai:gpt-4o-mini,Qui lance l'attaque qui mène à la bataille de Fort Beauséjour ?,les soldats britanniques,Les Britanniques.,les soldats britanniques,les britanniques,0,0,80.0,1,0,17,24
+1759,openai:gpt-4o-mini,Comment Nick répond-il à la demande de Lucifer ?,refuse,Il refuse.,refuse,il refuse,0,1,80.0,1,0,10,6
+1055,openai:gpt-4o-mini,A quel stade de la compétition l'équipe du Canada est elle opposée à l'équipe des États-Unis ?,en finale,Finale.,en finale,finale,0,0,80.0,1,0,7,9
+2299,openai:gpt-4o-mini,Quelles sont les nationalités de Medine ?,franco-algérienne,Française et algérienne.,franco algerienne,francaise et algerienne,0,0,80.0,1,0,24,17
+2310,openai:gpt-4o-mini,Quelle est la dette cumulée des États-Unis en 2017 ?,500 millions de dollars,20 000 milliards de dollars.,500 millions de dollars,20 000 milliards de dollars,0,0,80.0,1,0,28,23
+1642,openai:gpt-4o-mini,"Selon Thomas d'Aquin, à qui s'applique l'expression ""l'être absolu""?",Dieu,À Dieu.,dieu,a dieu,0,1,80.0,1,0,7,4
+906,openai:gpt-4o-mini,Comment s'appelle l'église où serait conservée l'Arche d'alliance dans la tradition éthiopienne ?,Sainte-Marie-de-Sion,Église de Sainte-Marie-de-Sion.,sainte marie de sion,eglise de sainte marie de sion,0,1,80.0,1,0,31,20
+1833,openai:gpt-4o-mini,Quelle était la force de la plus puissante des trois colonnes d'invasion?,7 800 hommes,12 000 hommes.,7 800 hommes,12 000 hommes,0,0,80.0,1,0,14,12
+2499,openai:gpt-4o-mini,"A partir de quel moment le bronzage est devenu un ""must"" social ?",les années 1930,Dans les années 1920.,les annees 1930,dans les annees 1920,0,0,80.0,1,0,21,15
+2581,openai:gpt-4o-mini,Quel sutlan conquiert la capitale byzantine ?,Mehmed II,Mohammed II.,mehmed ii,mohammed ii,0,0,80.0,1,0,12,9
+441,openai:gpt-4o-mini,Dans quelle langue les contes d'Alain Hélias ont-ils été traduits ?,breton,En breton.,breton,en breton,0,1,80.0,1,0,10,6
+2044,openai:gpt-4o-mini,Quelle espèce d'oiseau migrateur est concernée?,les hirondelles,Hirondelle.,les hirondelles,hirondelle,0,0,80.0,1,0,11,15
+38,openai:gpt-4o-mini,Quel est le problème engendré par la sélection clonale ?,réduction de la diversité génétique,Perte de diversité génétique.,reduction de la diversite genetique,perte de diversite genetique,0,0,79.36507936507937,0,0,29,35
+1070,openai:gpt-4o-mini,Contre quelle ennemi s'allièrent les tribus dans les Aurès ?,les Ottomans,Les Romains.,les ottomans,les romains,0,0,78.26086956521739,0,0,12,12
+1784,openai:gpt-4o-mini,Quelle autre partie de la fleur est-elle également couleur jaune ?,15 étamines,Les étamines.,15 etamines,les etamines,0,0,78.26086956521739,0,0,13,11
+811,openai:gpt-4o-mini,Qui perd la bataille de Beauport ?,les Anglais,Les Français.,les anglais,les francais,0,0,78.26086956521739,0,0,13,11
+341,openai:gpt-4o-mini,Comment désigne-t-on un acte ou une vertu qui se fait sincèrement et avec engagement ?,authentique,Authenticité.,authentique,authenticite,0,0,78.26086956521739,0,0,13,11
+352,openai:gpt-4o-mini,Quel animal a offert le père à son fils aîné ?,un chevreau,Un veau.,un chevreau,un veau,0,0,77.77777777777779,0,0,8,11
+1937,openai:gpt-4o-mini,Quelle population soumise à l'occupation japonaise fut principalement concernant par la politiquement d’enrôlement forcée?,Coréens,Les Coréens.,coreens,les coreens,0,1,77.77777777777779,0,0,12,7
+1386,openai:gpt-4o-mini,Combien de points l'équipe du FV Internazionale Milano a-t-elle obtenu contre l'équipe de Turin pendant la saison 2003-2004 ?,six points,8 points.,six points,8 points,0,0,77.77777777777779,0,0,9,10
+1497,openai:gpt-4o-mini,Lors de quelle guerre Edward Dickinson Baker est il tué ?,lors de la guerre de Sécession,Guerre de Sécession.,lors de la guerre de secession,guerre de secession,0,0,77.55102040816327,0,0,20,30
+792,openai:gpt-4o-mini,Quel événement a précédé la création de la République en Chine ?,la Révolution de 1911,La Révolution de Xinhai.,la revolution de 1911,la revolution de xinhai,0,0,77.27272727272727,0,0,24,21
+176,openai:gpt-4o-mini,Qu'a produit Pablo Picasso pour Cocteau ?,décor,Un décor.,decor,un decor,0,1,76.92307692307692,0,0,9,5
+1546,openai:gpt-4o-mini,Quels types de ventes ne sont pas compris dans la liste des meilleures ventes d'Amazon ?,Les ventes de gros,Les ventes d'occasion.,les ventes de gros,les ventes d occasion,0,0,76.92307692307692,0,0,22,18
+1834,openai:gpt-4o-mini,Quelle était la force de la plus puissante des trois colonnes d'invasion?,7 800 hommes,200 000 hommes.,7 800 hommes,200 000 hommes,0,0,76.92307692307692,0,0,15,12
+1226,openai:gpt-4o-mini,Quelle est la superficie de l'agglomération de Berlin ?,892 km2,891 km²,892 km2,891 km,0,0,76.92307692307692,0,0,7,7
+2116,openai:gpt-4o-mini,Quand débute l’ère impériale chinoise ?,221 à 206 av. J.-C,221 av. J.-C.,221 a 206 av j c,221 av j c,0,0,76.92307692307692,0,0,13,18
+1963,openai:gpt-4o-mini,Quelle puissance asiatique vint arbitrer le conflit entre Bangkok et Paris?,Japon,Le Japon.,japon,le japon,0,1,76.92307692307692,0,0,9,5
+482,openai:gpt-4o-mini,Quel est l'ordre de grandeur de l'aide fiscale en 2015 ?,7 milliards d'euros annuels,60 milliards d'euros.,7 milliards d euros annuels,60 milliards d euros,0,0,76.59574468085107,0,0,21,27
+1481,openai:gpt-4o-mini,Quelle ville se trouve à côté de Belleville dans l'Illinois ?,St. Louis,East St. Louis.,st louis,east st louis,0,1,76.19047619047619,0,0,15,9
+1482,openai:gpt-4o-mini,Quelle ville se trouve à côté de Belleville dans l'Illinois ?,St. Louis,East St. Louis.,st louis,east st louis,0,1,76.19047619047619,0,0,15,9
+1472,openai:gpt-4o-mini,Quel système les librairies utilisent elles pour partager leurs ventes à Book Sense ?,leur système de point de vente,Le système de points.,leur systeme de point de vente,le systeme de points,0,0,76.0,0,0,21,30
+1078,openai:gpt-4o-mini,Dans quelle région les tribus s'allièrent elles contre les Ottomans ?,Dans les Aurès,Dans le Caucase.,dans les aures,dans le caucase,0,0,75.86206896551724,0,0,16,14
+2955,openai:gpt-4o-mini,Quel est le ministère dans lequel il travaille?,ministère de la Magie,Ministère de l'Éducation.,ministere de la magie,ministere de l education,0,0,75.55555555555556,0,0,25,21
+2956,openai:gpt-4o-mini,Quel est le ministère dans lequel il travaille?,ministère de la Magie,Ministère de l'Éducation.,ministere de la magie,ministere de l education,0,0,75.55555555555556,0,0,25,21
+25,openai:gpt-4o-mini,Quel est le roi d'Angleterre à l'époque de Philippe II Auguste ?,Jean d'Angleterre,Jean sans Terre.,jean d angleterre,jean sans terre,0,0,75.0,0,0,16,17
+24,openai:gpt-4o-mini,Quel est le roi d'Angleterre à l'époque de Philippe II Auguste ?,Jean d'Angleterre,Jean sans Terre.,jean d angleterre,jean sans terre,0,0,75.0,0,0,16,17
+2091,openai:gpt-4o-mini,Dans quel livre Hermione enchante de faux gallions ?,Harry Potter et l'Ordre du phénix,Harry Potter et la Coupe de Feu.,harry potter et l ordre du phenix,harry potter et la coupe de feu,0,0,75.0,0,0,32,33
+2971,openai:gpt-4o-mini,Quand le Racing Club de Roubaix a-t-il été créé?,1895,1896.,1895,1896,0,0,75.0,0,0,5,4
+2267,openai:gpt-4o-mini,En quelle année Jakob Böhme tombe-t-il malade ?,1624,1620,1624,1620,0,0,75.0,0,0,4,4
+2268,openai:gpt-4o-mini,En quelle année Jakob Böhme tombe-t-il malade ?,1624,1612,1624,1612,0,0,75.0,0,0,4,4
+314,openai:gpt-4o-mini,Quelle est la langue maternelle de Pierre-Jakez Hélias ?,bretonnant,Breton,bretonnant,breton,0,0,75.0,0,0,6,10
+200,openai:gpt-4o-mini,Comment s'appelle le phénomène qui consiste à interdire toute production intellectuelle indépendante du pouvoir ou des idées en place ?,censurant,Censure.,censurant,censure,0,0,75.0,0,0,8,9
+26,openai:gpt-4o-mini,Quel est le roi d'Angleterre à l'époque de Philippe II Auguste ?,Jean d'Angleterre,Jean sans Terre.,jean d angleterre,jean sans terre,0,0,75.0,0,0,16,17
+178,openai:gpt-4o-mini,Qui passe commande à Apollinaire pour réaliser une plaquette pour son ballet ?,Serge Diaghilev,Diaghilev.,serge diaghilev,diaghilev,0,0,75.0,0,0,10,15
+177,openai:gpt-4o-mini,Qui passe commande à Apollinaire pour réaliser une plaquette pour son ballet ?,Serge Diaghilev,Diaghilev.,serge diaghilev,diaghilev,0,0,75.0,0,0,10,15
+2672,openai:gpt-4o-mini,Quel est la seule partie de leur corps que les tortues laissent émergée ?,leur tête,La tête.,leur tete,la tete,0,0,75.0,0,0,8,9
+2704,openai:gpt-4o-mini,En quelle année débute-t-il sa réflexion sur son corps ?,1967,1970,1967,1970,0,0,75.0,0,0,4,4
+2705,openai:gpt-4o-mini,En quelle année débute-t-il sa réflexion sur son corps ?,1967,1975,1967,1975,0,0,75.0,0,0,4,4
+2786,openai:gpt-4o-mini,En quelle date les papes sont-ils partis d'Avignon ?,1376,1377,1376,1377,0,0,75.0,0,0,4,4
+2741,openai:gpt-4o-mini,En quelle année la France cède-t-elle des colonies ?,1763,1783.,1763,1783,0,0,75.0,0,0,5,4
+2410,openai:gpt-4o-mini,L’IUPAC a confirmé l’identification du tennesse en 2015 où 2016 ?,2015,2016.,2015,2016,0,0,75.0,0,0,5,4
+625,openai:gpt-4o-mini,Qui est la mère de Nymphadora Tonks ?,Andromeda,Andromeda Tonks.,andromeda,andromeda tonks,0,1,75.0,0,0,16,9
+2969,openai:gpt-4o-mini,Quand Lille a t il remporté son premier titre de champion?,1914,1946,1914,1946,0,0,75.0,0,0,4,4
+1880,openai:gpt-4o-mini,En quelle année le camp de concentration accueilli-t-il ces premières détenues et geôlières?,1942,1944,1942,1944,0,0,75.0,0,0,4,4
+2967,openai:gpt-4o-mini,Quelle est l'année de naissance de l'US Tourcoing ?,1902,1904,1902,1904,0,0,75.0,0,0,4,4
+2968,openai:gpt-4o-mini,Quelle est l'année de naissance de l'US Tourcoing ?,1902,1906,1902,1906,0,0,75.0,0,0,4,4
+2960,openai:gpt-4o-mini,Quand est ce que la Ligue du Nord est née ?,1919,1989.,1919,1989,0,0,75.0,0,0,5,4
+1547,openai:gpt-4o-mini,Quel est le plus important site de vente de livres en ligne ?,Amazon.com,Amazon.,amazon com,amazon,0,0,75.0,0,0,7,10
+537,openai:gpt-4o-mini,Quand le PCF n'est plus dans la coalition au pouvoir?,1947,1978.,1947,1978,0,0,75.0,0,0,5,4
+2961,openai:gpt-4o-mini,Quand est ce que la Ligue du Nord est née ?,1919,1989.,1919,1989,0,0,75.0,0,0,5,4
+2970,openai:gpt-4o-mini,Quand Lille a t il remporté son premier titre de champion?,1914,1946,1914,1946,0,0,75.0,0,0,4,4
+1882,openai:gpt-4o-mini,En quelle année le camp de concentration accueilli-t-il ces premières détenues et geôlières?,1942,1940,1942,1940,0,0,75.0,0,0,4,4
+690,openai:gpt-4o-mini,Quand Jean Chaintron rejoint-il le SRI?,1930,1983.,1930,1983,0,0,75.0,0,0,5,4
+539,openai:gpt-4o-mini,Quand le PCF n'est plus dans la coalition au pouvoir?,1947,1978.,1947,1978,0,0,75.0,0,0,5,4
+2739,openai:gpt-4o-mini,Avec qui la France entre-t-elle en guerre en 1689 ?,avec l'Angleterre,Angleterre.,avec l angleterre,angleterre,0,0,74.07407407407408,0,0,11,17
+808,openai:gpt-4o-mini,Quelle bataille les Anglais perdent ils ?,la bataille de Beauport,La bataille de Hastings.,la bataille de beauport,la bataille de hastings,0,0,73.91304347826086,0,0,24,23
+1515,openai:gpt-4o-mini,Qui étaient les trois physiciens originaires de Hongries associés au projet Manhattan N,"Leó Szilárd, Edward Teller et Eugene Wigner","Leo Szilard, Edward Teller, John von Neumann.",leo szilard edward teller et eugene wigner,leo szilard edward teller john von neumann,0,0,73.80952380952381,0,0,45,43
+2906,openai:gpt-4o-mini,S'où par il pour rejoindre les Pays-Bas Autrichiens en 1790 ?,De Mayence,De France.,de mayence,de france,0,0,73.6842105263158,0,0,10,10
+2730,openai:gpt-4o-mini,Quand les ambassadeurs permanents apparaissent-ils ?,à partir du XVIe siècle,Au XVIIe siècle.,a partir du xvie siecle,au xviie siecle,0,0,73.6842105263158,0,0,16,23
+2729,openai:gpt-4o-mini,Quand les ambassadeurs permanents apparaissent-ils ?,à partir du XVIe siècle,Au XVIIe siècle.,a partir du xvie siecle,au xviie siecle,0,0,73.6842105263158,0,0,16,23
+2253,openai:gpt-4o-mini,A quoi mène les revendications au trone des Pandava et Kaurava ?,bataille de Kurukshetra,À la guerre de Kurukshetra.,bataille de kurukshetra,a la guerre de kurukshetra,0,0,73.46938775510203,0,0,27,23
+1627,openai:gpt-4o-mini,Combien de Polonais vivent sur Terre?,38 millions,Environ 38 millions.,38 millions,environ 38 millions,0,1,73.33333333333334,0,0,20,11
+1626,openai:gpt-4o-mini,Combien de Polonais vivent sur Terre?,38 millions,Environ 38 millions.,38 millions,environ 38 millions,0,1,73.33333333333334,0,0,20,11
+2005,openai:gpt-4o-mini,Qui est l'adversaire de don Luis de Cordova?,l'amiral Rodney,L'amiral Nelson.,l amiral rodney,l amiral nelson,0,0,73.33333333333334,0,0,16,15
+2254,openai:gpt-4o-mini,A quoi mène les revendications au trone des Pandava et Kaurava ?,la bataille de Kurukshetra,À la guerre de Kurukshetra.,la bataille de kurukshetra,a la guerre de kurukshetra,0,0,73.07692307692308,0,0,27,26
+1230,openai:gpt-4o-mini,Quelle est la population de Berlin ?,"environ 3,8 millions d'habitants","Environ 3,7 millions.",environ 3 8 millions d habitants,environ 3 7 millions,0,0,73.07692307692308,0,0,21,32
+189,openai:gpt-4o-mini,Quels métiers exercent les accolytes surréalistes de Breton ?,"écrivains, poètes, peintres, artistes","Écrivains, peintres, sculpteurs.",ecrivains poetes peintres artistes,ecrivains peintres sculpteurs,0,0,73.01587301587303,0,0,32,37
+2670,openai:gpt-4o-mini,Quel est la seule partie de leur corps que les tortues laissent émergée ?,tête,La tête.,tete,la tete,0,1,72.72727272727273,0,0,8,4
+461,openai:gpt-4o-mini,Quel sport se joue avec un club ?,le golf,Golf.,le golf,golf,0,0,72.72727272727273,0,0,5,7
+2671,openai:gpt-4o-mini,Quel est la seule partie de leur corps que les tortues laissent émergée ?,tête,La tête.,tete,la tete,0,1,72.72727272727273,0,0,8,4
+2743,openai:gpt-4o-mini,A partir de quelle période les documentaires se banalisent-ils ?,à la fin des années 1970,Dans les années 1960.,a la fin des annees 1970,dans les annees 1960,0,0,72.72727272727273,0,0,21,24
+1224,openai:gpt-4o-mini,Quand les institutions fédérales se sont elles installées à Berlin ?,en 1999,1999,en 1999,1999,0,0,72.72727272727273,0,0,4,7
+2521,openai:gpt-4o-mini,Comment s'appelle la communauté musulmane ?,l’oumma,Umma.,l oumma,umma,0,0,72.72727272727273,0,0,5,7
+930,openai:gpt-4o-mini,Quand Wole Soyinka a-t-il reçu le prix Nobel ?,en 1986,1986.,en 1986,1986,0,0,72.72727272727273,0,0,5,7
+183,openai:gpt-4o-mini,Quel est le titre de l'oeuvre théatrale écrite par Apollinaire ?,"Les Mamelles de Tirésias, « drame surréaliste",Les Mamelles de Tirésias.,les mamelles de tiresias drame surrealiste,les mamelles de tiresias,0,0,72.72727272727273,0,0,25,45
+1881,openai:gpt-4o-mini,En quelle année le camp de concentration accueilli-t-il ces premières détenues et geôlières?,En 1942,1942.,en 1942,1942,0,0,72.72727272727273,0,0,5,7
+789,openai:gpt-4o-mini,Quand débute le règne de la dynastie Qing ?,En 1644,1644,en 1644,1644,0,0,72.72727272727273,0,0,4,7
+1745,openai:gpt-4o-mini,Sur qui Erskine teste-t-il le sérum ?,sur Rogers,Steve Rogers.,sur rogers,steve rogers,0,0,72.72727272727273,0,0,13,10
+2311,openai:gpt-4o-mini,En quelle année la Palestine est-elle devenue un membre de l'UNESCO ?,En 2011,2011,en 2011,2011,0,0,72.72727272727273,0,0,4,7
+904,openai:gpt-4o-mini,Quand l'empereur d'Éthiopie a-t-il été tué ?,en 1975,1975.,en 1975,1975,0,0,72.72727272727273,0,0,5,7
+75,openai:gpt-4o-mini,Quel est le problème sur les systèmes X11 concernant les couleurs garanties ?,les couleurs garanties sur le web trament,Les couleurs garanties sont limitées.,les couleurs garanties sur le web trament,les couleurs garanties sont limitees,0,0,72.72727272727273,0,0,37,41
+2451,openai:gpt-4o-mini,Quel vaisseau loyaliste a menacé West Point lors de la guerre d'indépendance des États-Unis ?,le vaisseau Vulture,Le HMS Vulture.,le vaisseau vulture,le hms vulture,0,0,72.72727272727273,0,0,15,19
+1586,openai:gpt-4o-mini,Quelle faculté a été créée en 1846 ?,La faculté des lettres,La faculté de médecine.,la faculte des lettres,la faculte de medecine,0,0,72.72727272727273,0,0,23,22
+1539,openai:gpt-4o-mini,Quand le Billboard magazine est il passé d'un système de remontée manuelle des ventes à un système de remontée automatique ?,en 1991,1991.,en 1991,1991,0,0,72.72727272727273,0,0,5,7
+1328,openai:gpt-4o-mini,Pour qui l'utilisation des viaducs ferroviaires par le CDG Express créerait des nuisances sonores ?,pour les habitants,Pour les riverains.,pour les habitants,pour les riverains,0,0,72.22222222222221,0,0,19,18
+2580,openai:gpt-4o-mini,Quel sutlan conquiert la capitale byzantine ?,Mehmed II,Sultan Mehmed II.,mehmed ii,sultan mehmed ii,0,1,72.0,0,0,17,9
+130,openai:gpt-4o-mini,A quel musée anglais compare-t-on le musée Pouchkine ?,British Museum de Londres,British Museum.,british museum de londres,british museum,0,0,71.7948717948718,0,0,15,25
+1587,openai:gpt-4o-mini,À quelle organisme est rattachée l'école de droit à partir de 1808 ?,université impériale,Université de Paris.,universite imperiale,universite de paris,0,0,71.7948717948718,0,0,20,20
+2948,openai:gpt-4o-mini,Près de quelle ville habitent les Diggory?,Loutry Ste Chaspoule,Ottery St Catchpole.,loutry ste chaspoule,ottery st catchpole,0,0,71.7948717948718,0,0,20,20
+2947,openai:gpt-4o-mini,Près de quelle ville habitent les Diggory?,Loutry Ste Chaspoule,Ottery St. Catchpole.,loutry ste chaspoule,ottery st catchpole,0,0,71.7948717948718,0,0,21,20
+1202,openai:gpt-4o-mini,Quel est le montant du budget de la ville de Berlin ?,plus de 20 milliards d'euros,Environ 34 milliards d'euros.,plus de 20 milliards d euros,environ 34 milliards d euros,0,0,71.42857142857143,0,0,29,28
+2736,openai:gpt-4o-mini,Où le traité de 1748 a-t-il été signé ?,le traité d'Aix-la-Chapelle,Aix-la-Chapelle.,le traite d aix la chapelle,aix la chapelle,0,0,71.42857142857143,0,0,16,27
+1216,openai:gpt-4o-mini,À quelle origine renvoient les toponymes en -in de l'Est de l'Allemagne ?,au slave,Slaves.,au slave,slaves,0,0,71.42857142857143,0,0,7,8
+1227,openai:gpt-4o-mini,Combien y a-t-il d'habitants dans la région métropolitaine de Berlin-Brandebourg ?,6 millions,Environ 6 millions.,6 millions,environ 6 millions,0,1,71.42857142857143,0,0,19,10
+612,openai:gpt-4o-mini,Quel est le lieu de l'église catholique recevant le plus de visiteurs ?,la cité du Vatican,Le Vatican.,la cite du vatican,le vatican,0,0,71.42857142857143,0,0,11,18
+1787,openai:gpt-4o-mini,Quelle est la couleur caractéristique qui ressort dans les désignation de la Chelidonium majus?,jaune vif,Jaune.,jaune vif,jaune,0,0,71.42857142857143,0,0,6,9
+1228,openai:gpt-4o-mini,Combien y a-t-il d'habitants dans la région métropolitaine de Berlin-Brandebourg ?,6 millions,Environ 6 millions.,6 millions,environ 6 millions,0,1,71.42857142857143,0,0,19,10
+1293,openai:gpt-4o-mini,Pour quelle compagnie le Vizzavona navigue-t-il depuis 2018 ?,Corsica Linea,Corsica Ferries.,corsica linea,corsica ferries,0,0,71.42857142857143,0,0,16,13
+1294,openai:gpt-4o-mini,Pour quelle compagnie le Vizzavona navigue-t-il depuis 2018 ?,Corsica Linea,Corsica Ferries.,corsica linea,corsica ferries,0,0,71.42857142857143,0,0,16,13
+2599,openai:gpt-4o-mini,Combien de siècles a-t-il perduré ?,plus de six siècles,Deux siècles.,plus de six siecles,deux siecles,0,0,70.96774193548387,0,0,13,19
+436,openai:gpt-4o-mini,Qui sont les acteurs qui n'étaient pas en faveur de la guerre d'indépendance américaine ?,70 000 loyalistes,Les loyalistes.,70 000 loyalistes,les loyalistes,0,0,70.96774193548387,0,0,15,17
+883,openai:gpt-4o-mini,Quelles étaient les activités principales de l'Ancienne bourse ?,"l'immobilier, les marchandises, et les transactions bancaires",Le commerce et les transactions financières.,l immobilier les marchandises et les transactions bancaires,le commerce et les transactions financieres,0,0,70.58823529411764,0,0,44,61
+1498,openai:gpt-4o-mini,De quel état américain Edward Dickinson Baker a-t-il été sénateur ?,de l'Oregon,Oregon.,de l oregon,oregon,0,0,70.58823529411764,0,0,7,11
+820,openai:gpt-4o-mini,Quelle bataille s'est déroulée à l'emplacement actuel de Moncton ?,la bataille de Fort Beauséjour,La bataille de La Montée.,la bataille de fort beausejour,la bataille de la montee,0,0,70.37037037037037,0,0,25,30
+1138,openai:gpt-4o-mini,Quel culte ont célébré les rois séleucides ?,le culte babylonien,Le culte d'Apollon.,le culte babylonien,le culte d apollon,0,0,70.27027027027026,0,0,19,19
+1137,openai:gpt-4o-mini,Quel culte ont célébré les rois séleucides ?,le culte babylonien,Le culte d'Apollon.,le culte babylonien,le culte d apollon,0,0,70.27027027027026,0,0,19,19
+1677,openai:gpt-4o-mini,Qui est le rival de l’AC milan ?,l'Inter,L'Inter Milan.,l inter,l inter milan,0,1,70.0,0,0,14,7
+1082,openai:gpt-4o-mini,Où se situe la chaîne des Bibans ?,en Kabylie,En Algérie.,en kabylie,en algerie,0,0,70.0,0,0,11,10
+2140,openai:gpt-4o-mini,Comment s’appelle la soeur de Lily Evans ?,Pétunia,Petunia Evans.,petunia,petunia evans,0,1,70.0,0,0,14,7

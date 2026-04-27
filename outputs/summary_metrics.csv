@@ -1,0 +1,2 @@
+model,n_questions,accuracy_exact,accuracy_contains_gold,accuracy_fuzzy_80,accuracy_fuzzy_90,avg_fuzzy_score,avg_response_length
+openai:gpt-4o-mini,3000,5.43,8.03,9.13,7.0,40.08,17.49

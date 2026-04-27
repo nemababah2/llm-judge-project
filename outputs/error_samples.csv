@@ -1,0 +1,31 @@
+row_id,model,question,gold_answer,model_response,gold_norm,pred_norm,exact_match,contains_gold,fuzzy_score,fuzzy_correct_80,fuzzy_correct_90,response_length_chars,gold_length_chars
+0,openai:gpt-4o-mini,question,reponse,Réponse : 42.,reponse,reponse 42,0,1,82.35294117647058,1,0,13,7
+2,openai:gpt-4o-mini,Où se trouvait Franck Woolworth lors de l'inauguration de son immeuble New Yorkais ?,Washington,À New York.,washington,a new york,0,0,30.000000000000004,0,0,11,10
+3,openai:gpt-4o-mini,Comment fût payé le bâtiment commandé par Franck Woolworth?,en cash,En espèces.,en cash,en especes,0,0,58.82352941176471,0,0,11,7
+5,openai:gpt-4o-mini,Qui commanda la construction du Woolworth Building ?,Frank Woolworth,Frank W. Woolworth.,frank woolworth,frank w woolworth,0,0,93.75,1,1,19,15
+6,openai:gpt-4o-mini,Quelle femme devint reine aux côtés de Philippe le Bel ?,Jeanne Ire de Navarre,Jeanne de Navarre.,jeanne ire de navarre,jeanne de navarre,0,0,89.47368421052632,1,0,18,21
+7,openai:gpt-4o-mini,Quel créancier du roi fut supprimé en 1312 ?,l'ordre du Temple,Les Templiers.,l ordre du temple,les templiers,0,0,60.0,0,0,14,17
+8,openai:gpt-4o-mini,Quel créancier du roi fut supprimé en 1312 ?,l'ordre du Temple,Les Templiers.,l ordre du temple,les templiers,0,0,60.0,0,0,14,17
+9,openai:gpt-4o-mini,Quelle raison pousse Philippe Le Bel à organiser les premiers Etats généraux ?,pour lever de nouveaux impôts,La nécessité financière.,pour lever de nouveaux impots,la necessite financiere,0,0,30.76923076923077,0,0,24,29
+10,openai:gpt-4o-mini,Quel souverain utilise les dévaluations monétaires pour s'enrichir ?,Philippe IV le Bel,Le roi.,philippe iv le bel,le roi,0,0,33.333333333333336,0,0,7,18
+11,openai:gpt-4o-mini,Quel souverain rattacha le compté de Toulouse au royaume ?,Philippe III le Hardi,Louis VII.,philippe iii le hardi,louis vii,0,0,33.333333333333336,0,0,10,21
+12,openai:gpt-4o-mini,Qui succède à Louis 8 ?,Saint Louis,Louis 9.,saint louis,louis 9,0,0,55.55555555555556,0,0,8,11
+13,openai:gpt-4o-mini,Quels territoires Louis 8 réussit-il à prendre ?,des fiefs dans le midi,Le Languedoc et le Roussillon.,des fiefs dans le midi,le languedoc et le roussillon,0,0,35.29411764705882,0,0,30,22
+14,openai:gpt-4o-mini,Quels territoires Louis 8 réussit-il à prendre ?,le midi,Le Languedoc et le Poitou.,le midi,le languedoc et le poitou,0,0,31.25,0,0,26,7
+15,openai:gpt-4o-mini,Combien de temps dura le règne de Louis 8 ?,trois ans,Louis 8 a régné 3 ans.,trois ans,louis 8 a regne 3 ans,0,0,46.666666666666664,0,0,22,9
+16,openai:gpt-4o-mini,Quelle position occupe Saint Louis dans la justice qu'il instaure ?,juge et arbitre,Roi-juges.,juge et arbitre,roi juges,0,0,33.333333333333336,0,0,10,15
+17,openai:gpt-4o-mini,Quelle position occupe Saint Louis dans la justice qu'il instaure ?,le rôle de juge et arbitre,Roi-juge.,le role de juge et arbitre,roi juge,0,0,41.17647058823529,0,0,9,26
+18,openai:gpt-4o-mini,Quand est-ce que Saint Louis fût en croisade ?,1248 à 1254,1248-1254.,1248 a 1254,1248 1254,0,0,90.0,1,1,10,11
+19,openai:gpt-4o-mini,Pourquoi le roi des francs est-il devenu le roi de France ?,étendre le domaine royal au détriment des princes,Unification des royaumes.,etendre le domaine royal au detriment des princes,unification des royaumes,0,0,38.35616438356164,0,0,25,49
+20,openai:gpt-4o-mini,Quand est-ce que le roi des francs est-il devenu le roi de France ?,1204,987.,1204,987,0,0,0.0,0,0,4,4
+22,openai:gpt-4o-mini,Comment Philippe Auguste utilise t-il le droit féodal ?,"prononcer une confiscation, dont le duché de Normandie",Pour renforcer son pouvoir royal.,prononcer une confiscation dont le duche de normandie,pour renforcer son pouvoir royal,0,0,40.0,0,0,33,54
+23,openai:gpt-4o-mini,Comment Philippe Auguste utilise t-il le droit féodal ?,pour prononcer une confiscation,Pour renforcer son pouvoir.,pour prononcer une confiscation,pour renforcer son pouvoir,0,0,56.14035087719298,0,0,27,31
+24,openai:gpt-4o-mini,Quel est le roi d'Angleterre à l'époque de Philippe II Auguste ?,Jean d'Angleterre,Jean sans Terre.,jean d angleterre,jean sans terre,0,0,75.0,0,0,16,17
+25,openai:gpt-4o-mini,Quel est le roi d'Angleterre à l'époque de Philippe II Auguste ?,Jean d'Angleterre,Jean sans Terre.,jean d angleterre,jean sans terre,0,0,75.0,0,0,16,17
+26,openai:gpt-4o-mini,Quel est le roi d'Angleterre à l'époque de Philippe II Auguste ?,Jean d'Angleterre,Jean sans Terre.,jean d angleterre,jean sans terre,0,0,75.0,0,0,16,17
+27,openai:gpt-4o-mini,A quelle époque la vision du royaume change-t-elle ?,Sous le règne de Louis VI,Au Moyen Âge.,sous le regne de louis vi,au moyen age,0,0,32.432432432432435,0,0,13,25
+28,openai:gpt-4o-mini,Quel est le roi qui mena plusieurs expédition dans le royaume ?,Louis VI,Roi Salomon.,louis vi,roi salomon,0,0,31.57894736842105,0,0,12,8
+29,openai:gpt-4o-mini,Pourquoi Louis VI mena-t-il plusieurs expédition dans le royaume ?,pour soumettre les châtelains qui ne reconnaissent pas son pouvoir,Pour renforcer son autorité.,pour soumettre les chatelains qui ne reconnaissent pas son pouvoir,pour renforcer son autorite,0,0,40.86021505376344,0,0,28,66
+31,openai:gpt-4o-mini,Quelle est le nom de la Reine de Louis VII ?,Aliénor d'Aquitaine,Eleanor d'Aquitaine.,alienor d aquitaine,eleanor d aquitaine,0,0,89.47368421052632,1,0,20,19
+33,openai:gpt-4o-mini,En quoi consiste la sélection massale ?,"repérer les meilleurs pieds de vigne, à en prélever des bout de sarments pour ensuite les greffer",Élimination des individus moins adaptés d'une population.,reperer les meilleurs pieds de vigne a en prelever des bout de sarments pour ensuite les greffer,elimination des individus moins adaptes d une population,0,0,35.526315789473685,0,0,57,97
+34,openai:gpt-4o-mini,Y a-t-il des vignes issues de la sélection massale en côte des blancs ?,beaucoup de vignobles plantés en sélection massale,Oui.,beaucoup de vignobles plantes en selection massale,oui,0,0,11.32075471698113,0,0,4,50

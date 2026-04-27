@@ -1,0 +1,3 @@
+experiment,zero_score_rate,perfect_score_rate,middle_score_rate
+Claude juge OpenAI,44.1,13.14,42.76
+OpenAI juge Claude,65.06,25.94,9.0
